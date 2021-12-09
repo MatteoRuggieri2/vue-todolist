@@ -25,24 +25,12 @@
         <!-- MAIN -->
         <main>
             <div class="new-todo-container">
-                <input type="text" placeholder="Nuova Todo">
+                <input v-model="userTodoText" type="text" placeholder="Nuova Todo">
                 <button>Aggiungi</button>
             </div>
             <ul>
-                <li>
-                    ciao
-                    <span class="cross-icon"><i class="fas fa-times"></i></span>
-                </li>
-                <li>
-                    ciao
-                    <span class="cross-icon"><i class="fas fa-times"></i></span>
-                </li>
-                <li>
-                    ciao
-                    <span class="cross-icon"><i class="fas fa-times"></i></span>
-                </li>
-                <li>
-                    ciao
+                <li v-for="(todo) in todoList">
+                    {{ todo.text }}
                     <span class="cross-icon"><i class="fas fa-times"></i></span>
                 </li>
             </ul>

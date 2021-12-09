@@ -26,5 +26,37 @@ Vue.config.devtools = true;
 const app = new Vue(
     {
         el: '#root',
+        data: {
+            userTodoText: '',
+            todoList: [
+                {
+                    text: 'fare la spesa',
+                    done: false
+                },
+
+                {
+                    text: 'andare dal barbiere',
+                    done: false
+                },
+
+                {
+                    text: 'cucinare le lasagne',
+                    done: false
+                },
+
+                {
+                    text: 'aggiornare il pc',
+                    done: false
+                }
+            ]
+        },
+
+        methods: {
+            // devo fare una funzione che mi permette, al click di button,
+            // di creare una nuova todo
+            // newTodo: function() {
+            //     this.userTodoText
+            // }
+        }
     }
 );

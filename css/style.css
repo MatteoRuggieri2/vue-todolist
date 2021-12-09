@@ -6,6 +6,10 @@
 }
 
 /* COMMON */
+body{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 header{
     margin: 20px 0;
 }
@@ -34,6 +38,10 @@ ul li{
 
     /* test */
     background-color: rgba(144, 238, 144, 0.473);
+}
+
+.done{
+    text-decoration: line-through;
 }
 
 /* HEADER */
