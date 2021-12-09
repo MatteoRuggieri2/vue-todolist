@@ -31,7 +31,7 @@ const app = new Vue(
             todoList: [
                 {
                     text: 'fare la spesa',
-                    done: false
+                    done: true
                 },
 
                 {

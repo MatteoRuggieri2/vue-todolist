@@ -35,7 +35,7 @@
 
             <!-- Todo List -->
             <ul>
-                <li  v-for="(todo, index) in todoList" :class="{ 'todo-done': done }">
+                <li  v-for="(todo, index) in todoList" :class="{ 'todo-done': todo.done }">
                     <span >{{ todo.text }}</span>
                     <span class="cross-icon"><i @click="deleteTodo(index)" class="fas fa-times"></i></span>
                 </li>
