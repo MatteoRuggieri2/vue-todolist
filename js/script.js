@@ -54,9 +54,12 @@ const app = new Vue(
         methods: {
             // devo fare una funzione che mi permette, al click di button,
             // di creare una nuova todo
-            // newTodo: function() {
-            //     this.userTodoText
-            // }
+            newTodo: function() {
+                this.todoList.push({
+                    text: this.userTodoText,
+                    done: false
+                })
+            }
         }
     }
 );

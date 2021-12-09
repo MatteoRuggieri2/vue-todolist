@@ -26,7 +26,7 @@
         <main>
             <div class="new-todo-container">
                 <input v-model="userTodoText" type="text" placeholder="Nuova Todo">
-                <button>Aggiungi</button>
+                <button @click="newTodo">Aggiungi</button>
             </div>
             <ul>
                 <li v-for="(todo) in todoList">
