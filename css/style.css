@@ -40,7 +40,7 @@ ul li{
     background-color: rgba(144, 238, 144, 0.473);
 }
 
-.done{
+.todo-done{
     text-decoration: line-through;
 }
 

@@ -59,6 +59,12 @@ const app = new Vue(
                     text: this.userTodoText,
                     done: false
                 })
+            },
+
+            // devo fare una funzione che mi permette, al click della x,
+            // di eliminare una todo
+            deleteTodo: function(index) {
+                this.todoList.splice(index, 1);
             }
         }
     }

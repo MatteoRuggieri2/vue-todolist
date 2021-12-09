@@ -17,6 +17,8 @@
 
         <!-- HEADER -->
         <header>
+
+            <!-- Logo -->
             <div class="logo-container">
                 <img src="img/logo.png" alt="Boolean Logo">
             </div>
@@ -24,17 +26,22 @@
 
         <!-- MAIN -->
         <main>
+
+            <!-- New Todo Input -->
             <div class="new-todo-container">
                 <input v-model="userTodoText" type="text" placeholder="Nuova Todo">
                 <button @click="newTodo">Aggiungi</button>
             </div>
+
+            <!-- Todo List -->
             <ul>
-                <li v-for="(todo) in todoList">
-                    {{ todo.text }}
-                    <span class="cross-icon"><i class="fas fa-times"></i></span>
+                <li  v-for="(todo, index) in todoList" :class="{ 'todo-done': done }">
+                    <span >{{ todo.text }}</span>
+                    <span class="cross-icon"><i @click="deleteTodo(index)" class="fas fa-times"></i></span>
                 </li>
             </ul>
         </main>
+
     </div>
 
     <script type="text/javascript" src="js/script.js"></script>
