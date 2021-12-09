@@ -67,6 +67,10 @@ const app = new Vue(
             // di eliminare una todo
             deleteTodo: function(index) {
                 this.todoList.splice(index, 1);
+            },
+
+            checkDone: function(index) {
+                this.todoList[index].done = !this.todoList[index].done
             }
         }
     }
