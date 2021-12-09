@@ -4,3 +4,55 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* COMMON */
+header{
+    margin: 20px 0;
+}
+
+main{
+    width: 60%;
+    margin: auto;
+
+    /* test */
+    background-color: lightseagreen;
+}
+
+img{
+    width: 100%;
+}
+
+ul{
+    background-color: lightgray;
+    padding: 30px;
+    list-style-type: none;
+}
+
+ul li{
+    border-bottom: 1px solid black;
+    padding: 10px;
+
+    /* test */
+    background-color: rgba(144, 238, 144, 0.473);
+}
+
+/* HEADER */
+.logo-container{
+    width: 300px;
+    margin: auto;
+}
+
+.new-todo-container{
+    text-align: center;
+}
+
+.new-todo-container input,
+.new-todo-container button{
+    padding: 7px 14px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+ul li .cross-icon{
+    float: right;
+}

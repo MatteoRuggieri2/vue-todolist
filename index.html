@@ -5,11 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vue-todolist</title>
+
+    <!-- Link Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
-    
+    <div id="root">
+
+        <!-- HEADER -->
+        <header>
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Boolean Logo">
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <main>
+            <div class="new-todo-container">
+                <input type="text" placeholder="Nuova Todo">
+                <button>Aggiungi</button>
+            </div>
+            <ul>
+                <li>
+                    ciao
+                    <span class="cross-icon"><i class="fas fa-times"></i></span>
+                </li>
+                <li>
+                    ciao
+                    <span class="cross-icon"><i class="fas fa-times"></i></span>
+                </li>
+                <li>
+                    ciao
+                    <span class="cross-icon"><i class="fas fa-times"></i></span>
+                </li>
+                <li>
+                    ciao
+                    <span class="cross-icon"><i class="fas fa-times"></i></span>
+                </li>
+            </ul>
+        </main>
+    </div>
 
     <script type="text/javascript" src="js/script.js"></script>
 </body>
