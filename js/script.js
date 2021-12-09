@@ -32,22 +32,22 @@ const app = new Vue(
             userTodoText: '',
             todoList: [
                 {
-                    text: 'fare la spesa',
-                    done: true
-                },
-
-                {
-                    text: 'andare dal barbiere',
-                    done: true
-                },
-
-                {
-                    text: 'cucinare le lasagne',
+                    text: 'Fare la spesa',
                     done: false
                 },
 
                 {
-                    text: 'aggiornare il pc',
+                    text: 'Andare dal barbiere',
+                    done: false
+                },
+
+                {
+                    text: 'Cucinare le lasagne',
+                    done: false
+                },
+
+                {
+                    text: 'Aggiornare il pc',
                     done: false
                 }
             ]
@@ -57,10 +57,13 @@ const app = new Vue(
             // devo fare una funzione che mi permette, al click di button,
             // di creare una nuova todo
             newTodo: function() {
-                this.todoList.push({
-                    text: this.userTodoText,
-                    done: false
-                })
+                if( (this.userTodoText.trim()).length >= 3 ) {
+                    this.todoList.push({
+                        text: this.userTodoText,
+                        done: false
+                    })
+                    this.userTodoText = '';
+                }
             },
 
             // devo fare una funzione che mi permette, al click della x,
