@@ -54,7 +54,7 @@ const app = new Vue(
         },
 
         methods: {
-            // devo fare una funzione che mi permette, al click di button,
+            // Questa funzione mi permette, al click di button,
             // di creare una nuova todo
             newTodo: function() {
                 if( (this.userTodoText.trim()).length >= 3 ) {
@@ -66,12 +66,14 @@ const app = new Vue(
                 }
             },
 
-            // devo fare una funzione che mi permette, al click della x,
+            // Questa funzione mi permette, al click sulla x,
             // di eliminare una todo
             deleteTodo: function(index) {
                 this.todoList.splice(index, 1);
             },
 
+            // Questa funzione mi permette, al click su di essa,
+            // di contrassegnare una todo
             checkDone: function(index) {
                 this.todoList[index].done = !this.todoList[index].done
             }
